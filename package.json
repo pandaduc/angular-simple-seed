@@ -4,11 +4,17 @@
   "description": "Dead simple angular seed",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 1505 -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "angular": "^1.5.5"
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6"
   }
 }
